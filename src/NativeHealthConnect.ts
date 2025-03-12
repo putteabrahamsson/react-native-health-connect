@@ -25,6 +25,7 @@ export interface Spec extends TurboModule {
   requestPermission(
     permissions: (Permission | WriteExerciseRoutePermission)[]
   ): Promise<Permission[]>;
+  requestPermission1(): boolean;
   requestExerciseRoute(recordId: string): Promise<ExerciseRoute>;
   getGrantedPermissions(): Promise<Permission[]>;
   revokeAllPermissions(): Promise<void>;
